@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кошик — Beauty Glow</title>
+    <link rel="stylesheet" href="css/koshyk.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <a
+          href="index.html"
+          class="header-logo"
+          aria-label="Beauty Glow — на головну"
+        >
+          <img src="logo.png" alt="Beauty Glow" width="160" height="40" />
+        </a>
+        <div class="header-actions">
+          <nav class="header-nav" aria-label="Головне меню">
+            <ul>
+              <li><a href="#catalog">Каталог</a></li>
+              <li><a href="#contact">Контакти</a></li>
+              <li><a href="#login">Вхід/Кабінет</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html" class="cart-link" aria-label="Кошик">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="cart-container">
+      <div class="cart-items">
+        <article class="cart-item">
+  <img 
+    src="product2.jpg" 
+    alt="Набір для догляду за волоссям" 
+    class="item-photo"
+  />
+  <div class="item-info">
+    <h3 class="item-title">Набір для догляду за волоссям</h3>
+    <div class="skeleton-line medium"></div>
+  </div>
+  <div class="item-price">950 ГРН</div>
+</article>
+
+        <article class="cart-item">
+  <img 
+    src="lip_gloss.jpg" 
+    alt="Блиск для губ" 
+    class="item-photo"
+  />
+  <div class="item-info">
+    <h3 class="item-title">Блиск для губ</h3>
+    <div class="skeleton-line medium"></div>
+  </div>
+  <div class="item-price">500 ГРН</div>
+        </article>
+      </div>
+      <form class="checkout-form" action="/checkout" method="post">
+        <div class="input-group">
+          <input
+            type="text"
+            name="customer_info"
+            placeholder="Введіть дані / номер телефону для замовлення"
+            required
+          />
+        </div>
+        <button type="submit" class="submit-btn">Оформити замовлення</button>
+      </form>
+    </main>
+
+   <footer class="site-footer">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <p class="logo">Beauty Glow</p>
+          <p>Краса поруч з Beauty Glow</p>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">Інформація</h2>
+          <p><strong>Підтримка:</strong> щодня з 9:00–18:00</p>
+          <p><strong>Гарантія:</strong> 14 днів</p>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">Контакти</h2>
+          <p>
+            <a href="tel:+380441234567">+38 044 123 45 67</a><br />
+            <a href="mailto:hello@beauty_glow.example"
+              >hello@beauty_glow.example</a
+            >
+          </p>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Beauty Glow</p>
+    </footer>
+  </body>
+  </body>
+</html>

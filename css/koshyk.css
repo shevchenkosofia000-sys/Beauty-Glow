@@ -1,0 +1,613 @@
+/*  Шапка сайту (Header)  */
+.site-header {
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 16px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Логотип */
+.header-logo img {
+    display: block;
+    height: auto;
+    max-height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Блок навігації та кошика */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+/* Меню посилань */
+.header-nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 28px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #0b2545;
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+    color: #5c4033;
+}
+
+/* Іконка кошика */
+.cart-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #5c4033;
+  
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.cart-link:hover {
+    transform: scale(1.05);
+    color: #3b2820;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 16px;
+    }
+
+    .header-actions {
+        gap: 16px;
+    }
+
+    .header-nav ul {
+        gap: 14px;
+    }
+
+    .header-nav a {
+        font-size: 14px;
+    }
+}
+.site-footer {
+    margin-top: 40px;
+    padding: 36px 40px 20px;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-radius: 12px 12px 0 0;
+    box-sizing: border-box;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, sans-serif;
+    color: #1e293b;
+}
+
+Три основні блоки підвалу 
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+Назва магазину 
+.site-footer .logo {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 22px;
+    font-weight: 750;
+    letter-spacing: -0.5px;
+}
+
+Слоган 
+.site-footer .footer-cols>div:first-child p:last-child {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+Заголовки блоків 
+.site-footer .footer-title {
+    margin: 0 0 16px;
+    color: #0f172a;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+Інформація та контакти 
+.site-footer .footer-cols p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+Відступи між інформаційними рядками 
+.site-footer .footer-cols>div:nth-child(2) p {
+    margin: 0 0 8px;
+    color: #475569;
+}
+
+.site-footer strong {
+    color: #1e293b;
+    font-weight: 600;
+}
+
+Посилання на телефон та електронну пошту 
+.site-footer a {
+    display: inline-block;
+    margin-bottom: 6px;
+    color: #1d4ed8;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    overflow-wrap: anywhere;
+}
+
+.site-footer a:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+Нижній рядок із копірайтом 
+.site-footer .copyright {
+    max-width: 1200px;
+    margin: 28px auto 0;
+    padding-top: 16px;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+.footer-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.site-footer .copyright {
+    margin-top: 24px;
+}
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 1.5rem;
+}
+ Загальний контейнер кошика 
+.cart-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+Окремі картки товарів 
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    background-color: #f3f4f8;
+    padding: 20px;
+    border-radius: 18px;
+    
+    box-sizing: border-box;
+}
+
+ Скелетони та іконки в картці 
+.item-photo {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 12px;
+    color: #64748b;
+    flex-shrink: 0;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skeleton-line {
+    height: 10px;
+    background-color: #cbd5e1;
+    border-radius: 6px;
+}
+
+.skeleton-line.full {
+    width: 100%;
+}
+
+.skeleton-line.medium {
+    width: 60%;
+}
+
+.item-price {
+    font-weight: 700;
+    color: #1e293b;
+    background-color: #e2e8f0;
+    padding: 8px 16px;
+    border-radius: 10px;
+    
+}
+
+ Форма та поля вводу 
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 14px;
+    /* Заокруглення поля вводу */
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.input-group input:focus {
+    border-color: #1e293b;
+}
+
+ Кнопка оформлення замовлення 
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #18181b;
+    /* Темна кнопка */
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    /* Заокруглення кутів кнопки */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #27272a;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+body {
+    color: #172033;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+label,
+button,
+figcaption {
+    font-family: inherit;
+}
+.cart-item .item-photo {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+
+.item-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+}
+.container,
+header,
+main,
+#contact,
+.site-footer {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+@media (min-width: 48rem) {
+
+    .container,
+    header,
+    main,
+    #contact,
+    .site-footer {
+        padding: 0 1.5rem;
+    }
+}
+
+/* 2. Шапка й меню */
+.header-inner,
+header,
+.site-header .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem 2rem;
+}
+
+.menu,
+header nav ul,
+.header-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a,
+header nav a,
+.header-nav a {
+    display: inline-block;
+    padding: 0.5rem 0;
+    min-width: 1.5rem;
+    /* 24px за вимогою Кроку 4.5 */
+    min-height: 1.5rem;
+    /* 24px за вимогою Кроку 4.5 */
+}
+
+ Перший екран 
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 2rem;
+    align-items: end;
+}
+
+.hero-image {
+    grid-column: 1 / -1;
+}
+
+.hero-image video {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 20px;
+}
+
+.hero-content {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 40rem;
+}
+
+.floating-box {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+    position: relative;
+    align-self: end;
+    width: 22rem;
+}
+
+@media (max-width: 56.25rem) {
+
+    /* 900px */
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content,
+    .floating-box {
+        grid-column: 1;
+        grid-row: auto;
+        width: 100%;
+    }
+
+    .floating-box {
+        margin-top: 1.5rem;
+    }
+}
+
+h1 {
+    font-size: clamp(1.75rem, 1rem + 4vw, 3.5rem);
+}
+
+    Програма / таблиця / кошик 
+.table-wrap {
+    overflow-x: auto;
+}
+
+.schedule {
+    width: 100%;
+    min-width: 40rem;
+}
+
+    Спікери / Каталог товарів 
+.speakers,
+#catalog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+@media (min-width: 30rem) {
+
+    .speakers,
+    #catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 64rem) {
+
+    .speakers,
+    #catalog {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+    Форма
+.field input,
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form select,
+.floating-box input {
+    width: 100%;
+    max-width: 25rem;
+    box-sizing: border-box;
+}
+
+ Підвал 
+.footer-links,
+.footer-cols {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.5rem;
+}
+
+.footer-links a,
+.site-footer a {
+    display: inline-block;
+    padding: 0.5rem 0;
+}
+
+    Темна тема 
+    @media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #12141b;
+        --surface: #1c2030;
+        --text: #e8eaf2;
+        --muted: #a9aec2;
+        --line: #343a4f;
+        --accent: #8fa8ff;
+        --accent-ink: #0c1020;
+        --green: #58d3b0;
+    }
+
+    body {
+        background-color: var(--bg);
+        color: var(--text);
+    }
+
+    #catalog article,
+    .review-card,
+    .floating-box,
+    .cart-item {
+        background-color: var(--surface);
+        color: var(--text);
+    }
+
+    h1,
+    h2,
+    h3,
+    label,
+    .site-footer .footer-title {
+        color: var(--text);
+    }
+}
+
+      Менше руху 
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .btn-pulse,
+    .btn-primary,
+    .submit-btn {
+        animation: none;
+        transition: none;
+    }
+}
+
+    Друк 
+@media print {
+    :root {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --text: #000000;
+        --muted: #333333;
+        --line: #999999;
+        --accent: #1636b0;
+        --green: #0b7a63;
+    }
+
+    nav,
+    header nav,
+    .hero-img,
+    .hero-image video,
+    .btn,
+    .btn-primary,
+    .cart-btn,
+    #register,
+    #login-dialog,
+    #contact-form {
+        display: none !important;
+    }
+
+    .table-wrap {
+        overflow: visible;
+    }
+
+    .schedule {
+        min-width: 0;
+    }
+
+    h2 {
+        break-after: avoid;
+    }
+
+    tr,
+    .speaker,
+    #catalog article,
+    .review-card {
+        break-inside: avoid;
+    }
+}

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beauty Glow</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="#top" aria-label="Beauty Glow — на головну">
+        <img src="logo.png" alt="Логотип Beauty Glow" width="80" height="40" />
+      </a>
+
+      <nav aria-label="Головне меню">
+        <ul>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#contact">Контакти</a></li>
+          <li><a href="#login">Вхід/Кабінет</a></li>
+        </ul>
+      </nav>
+
+      <button
+        type="button"
+        aria-label="Відкрити кошик"
+        class="cart-btn"
+        onclick="location.href = 'koshyk.html'"
+      >
+        <img src="cart-icon.svg" alt="" />
+      </button>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-image">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="img/promo-poster.jpg"
+            width="800"
+            height="450"
+          >
+            <source src="promo.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="hero-content">
+          <h1>Трохи про нас</h1>
+          <p>
+            Ласкаво просимо до Beauty Glow — вашого простору краси та натхнення!
+            Ми поєднали найкращі світові б'юті-бренди та косметику власного
+            виробництва, створену за унікальними формулами для вашого ідеального
+            догляду. Що на вас чекає: натуральний догляд за шкірою та волоссям
+            власного бренду; тільки оригінальна продукція та перевірені
+            складники; допомога у виборі, швидка доставка та приємні бонуси.
+            Обирайте свої нові б'юті-фаворити та відкривайте красу разом із
+            нами!
+          </p>
+          <button type="button" class="btn-primary">За покупками</button>
+        </div>
+
+        <div
+          id="login-dialog"
+          class="floating-box"
+          role="dialog"
+          aria-label="Форма входу"
+        >
+          <button type="button" aria-label="Закрити вікно" class="close-btn">
+            ×
+          </button>
+          <form action="/submit" method="post">
+            <label for="input-name">Назва</label>
+            <input
+              id="input-name"
+              name="name"
+              type="text"
+              placeholder="Введіть значення"
+              minlength="3"
+              required
+            />
+            <small class="hint">Не менше 3 символів</small>
+          </form>
+        </div>
+      </section>
+      <section id="catalog" aria-labelledby="catalog-title">
+        <h2 id="catalog-title">Каталог</h2>
+
+        <article>
+          <h3>Догляд за обличчям</h3>
+          <figure>
+            <img
+              src="product1.jpg"
+              alt="Флакон зволожуючої сироватки для обличчя"
+              width="600"
+              height="360"
+              loading="lazy"
+            />
+            <figcaption>Процедури та засоби для щоденного догляду.</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Догляд за волоссям</h3>
+          <figure>
+            <img
+              src="product2.jpg"
+              alt="Набір натуральних шампунів та бальзамів"
+              width="600"
+              height="360"
+              loading="lazy"
+            />
+            <figcaption>Засоби для краси та здоров'я волосся.</figcaption>
+          </figure>
+        </article>
+
+        <article>
+          <h3>Косметика</h3>
+          <figure>
+            <img
+              src="product3.jpg"
+              alt="Палітра декоративної косметики"
+              width="600"
+              height="360"
+              loading="lazy"
+            />
+            <figcaption>Добірка косметичних засобів.</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section
+        id="reviews"
+        aria-labelledby="reviews-title"
+        class="reviews-section"
+      >
+        <h2 id="reviews-title">Відгуки</h2>
+
+        <div class="reviews-grid">
+          <!-- Відгук 1 -->
+          <article class="review-card">
+            <div class="review-avatar avatar-blue" aria-hidden="true">ОК</div>
+            <div class="review-content">
+              <h3 class="review-author">Олена К.</h3>
+              <p class="review-text">
+                Допомогли підібрати ідеальний догляд для чутливої шкіри —
+                почервоніння зникли вже за тиждень!
+              </p>
+            </div>
+          </article>
+
+          <!-- Відгук 2 -->
+          <article class="review-card">
+            <div class="review-avatar avatar-green" aria-hidden="true">ДМ</div>
+            <div class="review-content">
+              <h3 class="review-author">Яніна М.</h3>
+              <p class="review-text">
+                Замовляв подарунковий набір косметики для дружини. Консультант
+                порадила найкращі засоби, вона в захопленні!
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside aria-label="Соціальні мережі">
+        <h2>Ми в соціальних мережах</h2>
+        <nav aria-label="Соціальні мережі">
+          <a href="#social-instagram">Instagram Beauty Glow</a>
+        </nav>
+        <p id="social-instagram"></p>
+      </aside>
+    </main>
+    <section id="contact">
+      <h2>Напишіть нам</h2>
+      <p>Поля з позначкою «обов’язково» потрібно заповнити</p>
+      <form action="/send" method="post" id="contact-form" novalidate>
+        <p>
+          <label for="name">Ім’я (обов’язково)</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+            minlength="2"
+            maxlength="80"
+          />
+        </p>
+
+        <p>
+          <label for="email">Електронна пошта (обов’язково)</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            aria-describedby="email-hint email-error"
+          />
+          <small id="email-hint"> Приклад: name@example.com</small>
+          <small id="email-error"></small>
+        </p>
+
+        <p>
+          <label for="phone">Телефон (необов’язково)</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            autocomplete="tel"
+            inputmode="tel"
+            pattern="/+? {0-9}{10,20}"
+            aria-describedby="phone-hint"
+          />
+          <small id="phone-hint"> Формат: +380 50 123 45 67</small>
+        </p>
+        <fieldset>
+          <legend>Як вам зручніше отримати відповідь?</legend>
+          <input
+            id="by-email"
+            type="radio"
+            name="reply"
+            value="email"
+            checked
+          />
+          <input id="by-phone" type="radio" name="reply" value="phone" />
+        </fieldset>
+        <p>
+          <label for="topic">Тема звернення</label>
+          <select id="topic" name="topic">
+            <option value="">-оберіть тему-</option>
+            <option value="pricing">Питання щодо тарифів</option>
+            <option value="partner">Співпраця</option>
+            <option value="other">Інше</option>
+          </select>
+        </p>
+        <p>
+          <input id="consent" name="consent" type="checkbox" required />
+          <label for="consent"
+            >Погоджуюсь на обробку моїх персональних даних, щоб отримати
+            відповідь</label
+          >
+        </p>
+
+        <p>
+          <label for="message">Повідомлення (обов’язково) </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            minlength="10"
+            maxlength="500"
+          ></textarea>
+        </p>
+        <button type="submit">Надіслати</button>
+        <p id="form-status" role="status"></p>
+      </form>
+      <script src="js/form.js"></script>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-cols">
+        <div class="footer-col">
+          <p class="logo">Beauty Glow</p>
+          <p>Краса поруч з Beauty Glow</p>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">Інформація</h2>
+          <p><strong>Підтримка:</strong> щодня з 9:00–18:00</p>
+          <p><strong>Гарантія:</strong> 14 днів</p>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-title">Контакти</h2>
+          <p>
+            <a href="tel:+380441234567">+38 044 123 45 67</a><br />
+            <a href="mailto:hello@beauty_glow.example"
+              >hello@beauty_glow.example</a
+            >
+          </p>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Beauty Glow</p>
+    </footer>
+  </body>
+</html>
