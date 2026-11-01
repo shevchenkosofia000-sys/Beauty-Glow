@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <title>Shopping cart</title>
+  <g stroke="#695643" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 10h7l6 29a5 5 0 0 0 5 4h24a5 5 0 0 0 4.8-3.6L58 22H16"/>
+    <path d="M22 50h.1M48 50h.1" stroke-width="6"/>
+    <circle cx="23" cy="51" r="3.5" fill="#695643" stroke="none"/>
+    <circle cx="48" cy="51" r="3.5" fill="#695643" stroke="none"/>
+  </g>
+</svg>
