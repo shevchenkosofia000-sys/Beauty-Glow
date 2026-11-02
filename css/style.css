@@ -1021,4 +1021,48 @@ figcaption {
           break-inside: avoid;
       }
   }
-        
+    /* Кнопка гамбургер-меню (за замовчуванням прихована) */
+.burger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.burger-btn span {
+    width: 100%;
+    height: 2px;
+    background-color: #0b2545;
+    border-radius: 2px;
+}
+
+/* Правила адаптивності для мобільних пристроїв (екрани до 768px) */
+@media (max-width: 768px) {
+    .site-header .header-container {
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Приховуємо текстові посилання меню на мобільному */
+    .header-nav {
+        display: none;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    /* Відображаємо гамбургер-кнопку тільки на мобільних */
+    .burger-btn {
+        display: flex;
+    }
+}    
