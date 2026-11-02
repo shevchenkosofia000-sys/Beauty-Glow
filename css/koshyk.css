@@ -328,6 +328,24 @@ body {
         background-color: var(--surface);
         color: var(--text);
     }
+   @media (max-width: 768px) {
+    .header-container {
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Ховаємо текстові посилання на мобільному, щоб не захаращувати кошик */
+    .header-nav {
+        display: none;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+    }
+}
 
     .site-footer .footer-title {
         color: var(--text);
