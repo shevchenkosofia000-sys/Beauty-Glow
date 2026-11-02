@@ -1,27 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="data:,">
-  <title>Сторінку не знайдено — Beauty Glo</title>
-  <style>
-    body { margin: 0; font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      color: #1b1d24; background: #f2f5fc; }
-    main { max-width: 36rem; margin: 0 auto; padding: 4rem 1rem;
-      text-align: center; }
-    h1 { font-size: 2rem; }
-    a { display: inline-block; padding: 0.75rem 1.4rem; border-radius: 10px;
-      background: #f3f4f8; color: #ffffff; font-weight: 600;
-      text-decoration: none; }
-  </style>
-</head>
-<body>
-  <main>
-    <p>Помилка 404</p>
-    <h1>Такої сторінки немає</h1>
-    <p>Можливо, адресу введено з помилкою або сторінку перенесено.</p>
-    <a href="/pages-trener/">На головну</a>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сторінку не знайдено — Beauty Glow</title>
+    <link rel="stylesheet" href="css/koshyk.css" />
+    <style>
+      .error-container {
+        text-align: center;
+        padding: 80px 20px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .error-code {
+        font-size: 80px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      .error-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+      .error-desc {
+        color: #666;
+        margin-bottom: 30px;
+      }
+      .btn-home {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background-color 0.2s;
+      }
+      .btn-home:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <a href="index.html" class="header-logo" aria-label="Beauty Glow — на головну">
+          <img src="logo.png" alt="Beauty Glow" width="160" height="40" />
+        </a>
+      </div>
+    </header>
+
+    <main class="error-container">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Здається, цієї сторінки не існує</h1>
+      <p class="error-desc">
+        Можливо, ви ввели неправильну адресу або сторінка була переміщена.
+      </p>
+      <a href="index.html" class="btn-home">Повернутися на головну</a>
+    </main>
+
+    <footer class="site-footer">
+      <p class="copyright">© 2026 Beauty Glow</p>
+    </footer>
+  </body>
 </html>
