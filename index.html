@@ -8,38 +8,27 @@
   </head>
 
   <body>
-   <header class="site-header">
-      <div class="header-container">
-        <a href="#top" class="header-logo" aria-label="Beauty Glow — на головну">
-          <img src="logo.png" alt="Логотип Beauty Glow" width="80" height="40" />
-        </a>
+   <header>
+      <a href="#top" aria-label="Beauty Glow — на головну">
+        <img src="logo.png" alt="Логотип Beauty Glow" width="80" height="40" />
+      </a>
 
-        <div class="header-actions">
-          <nav class="header-nav" aria-label="Головне меню">
-            <ul>
-              <li><a href="#catalog">Каталог</a></li>
-              <li><a href="#contact">Контакти</a></li>
-              <li><a href="#login">Вхід/Кабінет</a></li>
-            </ul>
-          </nav>
+      <nav aria-label="Головне меню">
+        <ul>
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#contact">Контакти</a></li>
+          <li><a href="#login">Вхід/Кабінет</a></li>
+        </ul>
+      </nav>
 
-          <button
-            type="button"
-            aria-label="Відкрити кошик"
-            class="cart-btn"
-            onclick="location.href = 'koshyk.html'"
-          >
-            <img src="cart-icon.svg" alt="" width="24" height="24" />
-          </button>
-
-          <!-- Кнопка гамбургер-меню (три смужки) для мобільних -->
-          <button type="button" class="burger-btn" aria-label="Відкрити меню">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </div>
+      <button
+        type="button"
+        aria-label="Відкрити кошик"
+        class="cart-btn"
+        onclick="location.href = 'koshyk.html'"
+      >
+        <img src="cart-icon.svg" alt="" />
+      </button>
     </header>
     <main>
       <section class="hero-section">
